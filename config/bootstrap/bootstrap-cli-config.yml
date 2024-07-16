@@ -67,9 +67,13 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: 399c681b-5e12-49e5-91e3-5b5f61ae643f # for the AAD Group to be matched to cdf-group
                 idp-source-name: bootcamp-08-test-all-read # i.e. bootcamp-01-test-all-read
-              - cdf-group: cdf:uc001:oee:owner
-                idp-source-id: 56d81865-a028-4585-810b-299fcfdde6ad
-                idp-source-name: bootcamp-08-test-uc-001-oee-owner
+              - cdf-group: cdf:uc:001:oee:owner
+                idp-source-id: 5ac26cb2-50e0-452d-bf5f-cdb62d60fcb8
+                idp-source-name: bootcamp-08-test-uc-001-oee-all-owner
+              - cdf-group: cdf:uc:001:oee:read
+                idp-source-id: 68acf539-685a-46e4-8c24-9c3390dfad3b
+                idp-source-name: bootcamp-08-test-uc-001-oee-all-read
+
 
         - cdf-project: cdf-bootcamp-08-prod # i.e. bootcamp-01-test
           mappings:
@@ -82,9 +86,14 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: 91e883b9-abed-4235-a528-826796ff9f2c # for the AAD Group to be matched to cdf-group
                 idp-source-name: bootcamp-08-prod-all-read # i.e. bootcamp-01-test-all-read
-              - cdf-group: cdf:uc001:oee:owner
-                idp-source-id: 25042a17-91f9-4387-9297-dcc36bfb47df
-                idp-source-name: bootcamp-08-prod-uc-001-oee-owner
+               
+              - cdf-group: cdf:uc:001:oee:owner
+                idp-source-id: 8b7ead48-1a05-47e4-b7a7-a2bd1034a5ba
+                idp-source-name: bootcamp-08-prod-uc-001-oee-all-owner
+              - cdf-group: cdf:uc:001:oee:read
+                idp-source-id: 38dde2a5-eaf3-4397-a1aa-705a1c19065c
+                idp-source-name: bootcamp-08-prod-uc-001-oee-all-read
+
 
     namespaces:
 #        # Typical config will have a namespace for data sources ("src") and a namespace for use cases ("uc")
